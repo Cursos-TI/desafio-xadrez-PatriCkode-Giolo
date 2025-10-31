@@ -18,11 +18,11 @@ int main() {
     {
         
         if (bispo == 1){
-            printf("### Bispo ###:\nCima\nDireita\n\n");
-            printf("----------------------------\n");    
+            printf("### Bispo ###\n\n");
+                
         }
         
-        printf("Bispo:\nCima\nDireita\n\n");
+        printf("Cima\nDireita\n");
         printf("----------------------------\n");
         bispo++;
         
@@ -33,31 +33,46 @@ int main() {
     do{
         
         if (torre == 1){
-            printf("### Torre ###: Direita\n");    
+            printf("### Torre ###\n\n");    
         }
         
-        printf("Torre: Direita\n");
+        printf("Direita\n");
         printf("----------------------------\n");
         torre++;
 
     }while(torre <= 5);
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-    for (rainha ; rainha <= 7; rainha++)
+    for (rainha ; rainha <= 8; rainha++)
     {
         
         if(rainha == 1){
-            printf("### Rainha ###: Esquerda\n");
-            printf("----------------------------\n");
+            printf("### Rainha ###\n\n");
         }
         
-        printf("Rainha: Esquerda\n");
+        printf("Esquerda\n");
         printf("----------------------------\n");
     }
     // Nível Aventureiro - Movimentação do Cavalo
+    int cavaloBx = 1, cavaloEsq;
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    for(cavaloEsq = 1; cavaloEsq <= 1; cavaloEsq++){
+        
+        printf("### Cavalo ###\n");
+        do
+        {
+            
+            cavaloBx++;
+            printf("Baixo\n");
+        } while (cavaloBx <= 2);
+        
+        
+        printf("Esquerda.\n\n");
+        
 
+
+    }
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
